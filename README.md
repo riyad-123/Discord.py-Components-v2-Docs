@@ -107,7 +107,8 @@ class InteractionExample(ui.LayoutView):
             )
         ))```
 
-Component Reference Table
+```
+## Component Reference Table
 | Component | Description | Best Use Case |
 |---|---|---|
 | LayoutView | Parent View class | The foundation of any V2 UI. |
