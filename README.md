@@ -36,7 +36,8 @@ class CoreLayout(ui.LayoutView):
                 ui.Button(label="Action 1", style=discord.ButtonStyle.primary),
                 ui.Button(label="Action 2", style=discord.ButtonStyle.secondary)
             )
-        ))```
+        ))
+```
 
 2. Content & Media Elements
 Section
@@ -60,7 +61,8 @@ class MediaExample(ui.LayoutView):
             thumbnail=ui.Thumbnail(media="[https://example.com/avatar.png](https://example.com/avatar.png)")
         )
 
-        self.add_item(ui.Container(section, gallery))```
+        self.add_item(ui.Container(section, gallery))
+```
 
 3. Formatting Components
 TextDisplay
@@ -76,7 +78,8 @@ class FormattingExample(ui.LayoutView):
             ui.TextDisplay(content="### Top Section"),
             ui.Separator(visible=True),
             ui.TextDisplay(content="### Bottom Section")
-        ))```
+        ))
+```
 
 4. Interactive Components & Styles
 Select Menus
