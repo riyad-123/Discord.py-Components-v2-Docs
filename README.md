@@ -36,7 +36,7 @@ class CoreLayout(ui.LayoutView):
                 ui.Button(label="Action 1", style=discord.ButtonStyle.primary),
                 ui.Button(label="Action 2", style=discord.ButtonStyle.secondary)
             )
-        ))
+        ))```
 
 2. Content & Media Elements
 Section
@@ -45,6 +45,7 @@ Thumbnail
 A dedicated image component. When used inside a Section, it automatically aligns to the side of the text.
 MediaGallery & MediaGalleryItem
 Allows for a grid of images (up to 4). MediaGalleryItem is used to define the specific properties of each image in the gallery.
+```python
 class MediaExample(ui.LayoutView):
     def __init__(self):
         super().__init__()
@@ -59,13 +60,14 @@ class MediaExample(ui.LayoutView):
             thumbnail=ui.Thumbnail(media="[https://example.com/avatar.png](https://example.com/avatar.png)")
         )
 
-        self.add_item(ui.Container(section, gallery))
+        self.add_item(ui.Container(section, gallery))```
 
 3. Formatting Components
 TextDisplay
 A block-level text component. It supports full markdown and is preferred over standard message content for structured data.
 Separator
 A horizontal line used to create visual distinction between content blocks. Use visible=True to render the line.
+```python
 class FormattingExample(ui.LayoutView):
     def __init__(self):
         super().__init__()
@@ -74,7 +76,7 @@ class FormattingExample(ui.LayoutView):
             ui.TextDisplay(content="### Top Section"),
             ui.Separator(visible=True),
             ui.TextDisplay(content="### Bottom Section")
-        ))
+        ))```
 
 4. Interactive Components & Styles
 Select Menus
@@ -87,7 +89,8 @@ V2 utilizes the expanded discord.ButtonStyle enum, including:
  * .danger (Red)
  * .link (Grey with redirect icon)
  * .premium (For monetization/SKU integration)
-<!-- end list -->
+
+```python
 class InteractionExample(ui.LayoutView):
     def __init__(self):
         super().__init__()
@@ -102,7 +105,7 @@ class InteractionExample(ui.LayoutView):
             ui.ActionRow(
                 ui.Button(label="Premium Feature", style=discord.ButtonStyle.premium)
             )
-        ))
+        ))```
 
 Component Reference Table
 | Component | Description | Best Use Case |
