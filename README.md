@@ -105,7 +105,7 @@ class InteractionExample(ui.LayoutView):
             ui.ActionRow(
                 ui.Button(label="Premium Feature", style=discord.ButtonStyle.premium)
             )
-        ))```
+        ))
 
 ```
 ## Component Reference Table
