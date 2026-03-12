@@ -109,8 +109,32 @@ class InteractionExample(ui.LayoutView):
                 ui.Button(label="Premium Feature", style=discord.ButtonStyle.premium)
             )
         ))
-
 ```
+## Troubleshooting
+
+- **Child limit error:** Only 40 UI elements per view/container. Combine text/buttons into fewer items.
+- **Buttons not working:** Assign an async callback to each button if you use them.
+- **UI not updating:** Edit the message with `await interaction.response.edit_message(view=self)` after changing the view.
+
+---
+
+## FAQ
+
+### **Q: Why do I get 'maximum number of children exceeded (40)'?**
+Ans: You can only have 40 UI elements per view/container. Combine text/buttons into fewer items.
+
+
+### **Q: Why do my buttons not work?**
+Ans: Make sure you assign an async callback to each button: `btn.callback = self.on_click`.
+
+
+### **Q: How do I update the UI after a button is pressed?** 
+Ans: Change the view state, then call `await interaction.response.edit_message(view=self)`.
+
+
+### **Q: Can I use Cv2 in both commands and cogs?** 
+Ans: Yes! The pattern is the same everywhere.
+
 ## Component Reference Table
 | Component | Description | Best Use Case |
 |---|---|---|
