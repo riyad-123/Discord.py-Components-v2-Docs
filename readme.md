@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://cdn.discordapp.com/attachments/1476728915522224138/1478833401208373389/AddText_03-05-01.07.38.jpg?ex=69b2682e&is=69b116ae&hm=362b1b1f064a7e6cb6cc8768970d8c5b5158899950e53b2970c6778f3e592f99&" width="100%" alt="Asteroid Banner">
+  <img src="https://cdn.discordapp.com/banners/1393833894502993981/e00725043db3625ff8803b20c2b24457.png?size=512" width="100%" alt="Asteroid Banner">
   <h1>Discord.py Components V2 Master Guide</h1>
   <p><b>An In-depth Technical Documentation by 🆁︎🅸︎🆈︎🅰︎🅳︎ && Asteroid Development</b></p>
   <hr>
